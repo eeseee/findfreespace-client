@@ -9,10 +9,8 @@ function App() {
       <header>
         <h1 className = "title" >findfreespace</h1>
       </header>
-      <div className="content">
         <MainBar />
         <FloorList/>
-      </div>
     </div>
   );
 }

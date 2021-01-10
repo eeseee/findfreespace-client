@@ -1,22 +1,33 @@
 import React from 'react';
+import axios from 'axios';
 
 const MainBar = () => {
+    
+    const [buildingsList, setBuildingsList] = React.useState([]);
 
-    const buildingList = [];
     
     React.useEffect(() => {
+        axios.get('/buildings/').then((res) => {
+            const buildings = res.data
+            setBuildingsList(buildings);
+        })
+        .catch ((err) => {
+            console.log(err);
+        })
+    }, []);
 
+    const renderDropdownOptions = () => {
 
-
-    }, [])
-
+        return buildingsList.map((building) => {
+            console.log(building)
+            return (<li><a href="#">{building.name}</a></li>);
+        })
+    }
     return (
                 <div class="select">
                     <button>select current building</button>
                     <ul>
-                        <li><a href="#">icics building</a></li>
-                        <li><a href="#">leonard s. klinck</a></li>
-                        <li><a href="#">earth sciences building</a></li>
+                        {renderDropdownOptions()}
                     </ul>
                 </div>
     )
