@@ -1,4 +1,5 @@
 import './App.css';
+import FloorList from './components/FloorList';
 //Importing Components
 import MainBar from "./components/MainBar";
 
@@ -10,6 +11,7 @@ function App() {
       </header>
       <div className="content">
         <MainBar />
+        <FloorList/>
       </div>
     </div>
   );

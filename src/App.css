@@ -182,6 +182,28 @@ header {
   transform: translateY(0);
 }
 
+.floorlist {
+  margin-top: 150px;
+  height: 20vh;
+  display: block;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floorlist button  {
+  width: 100%;
+  margin-block: 20px;
+  background-color: #FAE1C3;
+  border: none;
+  color: #202020;
+  font-size: 32px;
+}
+
+.floorlist button:hover {
+  color: #c0ac98;
+}
+
 
 
 
