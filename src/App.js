@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>findfreespace</h1>
+        <h1 className = "title" >findfreespace</h1>
       </header>
       <MainBar />
     </div>

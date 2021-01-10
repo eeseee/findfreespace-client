@@ -1,18 +1,26 @@
 import React from 'react';
+import { Select, makeStyles } from '@material-ui/core';
+
+const useStyles= makeStyles ({
+    root: {
+        color: "white",
+        marginLeft: "465px",
+        marginTop: "240px",
+        width: "971px",
+        height: "81px",
+        
+    }
+}) 
 
 const MainBar = () => {
+    const classes = useStyles();
     return (
-        <div class = "dropdown">
-            <button onClick="myFunction()" class="dropbtn">select current building</button>
-            <div id="myDropDown" class="dropdown-content">
-                <a href="#">icics building</a>
-                <a href="#">leonard s. klinck</a>
-                <a href="#">earth sciences building</a>
-            </div>
-        </div>
+        <Select className={classes.root}/>
+
         
     )
 }
+
 
 
 
