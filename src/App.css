@@ -20,6 +20,7 @@ html::-webkit-scrollbar {
 .App {
   padding-right: 25%;
   padding-left: 25%;
+  padding-bottom: 25%;
 }
 
 header {
@@ -29,8 +30,8 @@ header {
 }
 
 .title {
+  margin: 0;
   margin-top: 59px;
-  margin-left: 29px;
 }
 
 
@@ -134,6 +135,27 @@ header {
   margin-left:10px;
 }
 
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.row-p {
+  margin: 0;
+}
+
+.row-p-occupied {
+  margin: 0;
+  color: #B91C1C
+}
+
+.row-p-available {
+  margin: 0;
+  color: #4DB428
+}
+
 .select button:hover {
   color: #c0ac98;
 }
@@ -203,6 +225,8 @@ header {
   border: none;
   color: #202020;
   font-size: 32px;
+  border-radius: 24px;
+
 }
 
 .floorlist button:hover {
@@ -210,9 +234,37 @@ header {
 }
 
 p {
-  font-size: 28px;
+  font-size: 20px;
   color: #FAE1C3;
   margin-left: 50px;
+}
+
+.refresh a {
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.refresh a:hover {
+  color: #c0ac98;
+
+}
+
+
+.refresh {
+  color: #FAE1C3;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+
+footer {
+  font-size: 20px;
+  color: #FAE1C3;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 
