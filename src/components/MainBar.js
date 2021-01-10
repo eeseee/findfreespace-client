@@ -26,8 +26,6 @@ const MainBar = () => {
         }
     }
     return (
-        <body>
-            <nav>
                 <div class="select">
                     <button>select current building</button>
                     <ul>
@@ -36,8 +34,6 @@ const MainBar = () => {
                         <li><a href="#">earth sciences building</a></li>
                     </ul>
                 </div>
-            </nav>
-        </body>
     )
 }
 
