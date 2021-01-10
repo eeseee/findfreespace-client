@@ -1,20 +1,6 @@
 import React from 'react';
 
 const MainBar = () => {    
-    
-    const myFunction = () => {
-        document.getElementById("myDropdown").classList.toggle("show");
-        window.onClick = function(event) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i=0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
     return (
         <body>
             <nav>
@@ -30,8 +16,5 @@ const MainBar = () => {
         </body>
     )
 }
-
-
-
 
 export default MainBar;

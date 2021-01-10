@@ -112,7 +112,7 @@ header {
 }
 
 .select button:hover {
-  color: #85827f;
+  color: #c0ac98;
 }
 
 .select ul {
@@ -143,15 +143,15 @@ header {
   align-items: flex-start;
 }
 
-.select li:hover {
-  color: #85827f;
-}
-
 .select a {
   color: #202020;
   background-color: #FAE1C3;
   text-decoration: none;
   font-size: 24px;
+}
+
+.select a:hover {
+  color: #c0ac98;
 }
 
 
