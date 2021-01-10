@@ -124,7 +124,14 @@ header {
   border: none;
   color: #202020;
   font-size: 32px;
-  font-style: italic;
+}
+
+.icon {
+  z-index: 1;
+  background-color: #FAE1C3;
+  width:25px;
+  height:25px;
+  margin-left:10px;
 }
 
 .select button:hover {
@@ -144,7 +151,7 @@ header {
   list-style: none;
   padding: 0;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
   transform: translateY(-10px);
   transition: all 0.4s ease;
 }
@@ -175,10 +182,8 @@ header {
   color: #c0ac98;
 }
 
-
 .select button:focus + ul{
   opacity: 1;
-  pointer-events: all;
   transform: translateY(0);
 }
 
@@ -202,6 +207,12 @@ header {
 
 .floorlist button:hover {
   color: #c0ac98;
+}
+
+p {
+  font-size: 28px;
+  color: #FAE1C3;
+  margin-left: 50px;
 }
 
 

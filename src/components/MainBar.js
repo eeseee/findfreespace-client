@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const MainBar = () => {
+const MainBar = ({handleSelect, buttonName}) => {
     
     const [buildingsList, setBuildingsList] = React.useState([]);
 
@@ -19,17 +19,18 @@ const MainBar = () => {
     const renderDropdownOptions = () => {
 
         return buildingsList.map((building) => {
-            console.log(building)
-            return (<li><a href="#">{building.name}</a></li>);
+            return (
+                <li><a key={building.name} onClick={() => { handleSelect(building.name)}}>{building.name}</a></li>);
         })
     }
     return (
-                <div class="select">
-                    <button>select current building</button>
-                    <ul>
-                        {renderDropdownOptions()}
-                    </ul>
-                </div>
+        <div class="select">
+            <img class="icon" src="https://image.flaticon.com/icons/png/128/16/16895.png?ga=GA1.2.633345297.1602720000"/>
+            <button>{buttonName}</button>
+                <ul>
+                    {renderDropdownOptions()}
+                </ul>
+        </div>  
     )
 }
 
