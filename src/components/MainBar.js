@@ -1,23 +1,33 @@
 import React from 'react';
-import { Select, makeStyles } from '@material-ui/core';
 
-const useStyles= makeStyles ({
-    root: {
-        color: "white",
-        marginLeft: "465px",
-        marginTop: "240px",
-        width: "971px",
-        height: "81px",
-        
+const MainBar = () => {    
+    
+    const myFunction = () => {
+        document.getElementById("myDropdown").classList.toggle("show");
+        window.onClick = function(event) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i=0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
     }
-}) 
-
-const MainBar = () => {
-    const classes = useStyles();
     return (
-        <Select className={classes.root}/>
-
-        
+        <body>
+            <nav>
+                <div class="select">
+                    <button>select current building</button>
+                    <ul>
+                        <li><a href="#">icics building</a></li>
+                        <li><a href="#">leonard s. klinck</a></li>
+                        <li><a href="#">earth sciences building</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </body>
     )
 }
 
