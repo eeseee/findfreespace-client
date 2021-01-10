@@ -106,6 +106,9 @@ header {
   height: 95%;
   background-color: #FAE1C3;
   border: none;
+  color: #202020;
+  font-size: 32px;
+  font-style: italic;
 }
 
 .select button:hover {
