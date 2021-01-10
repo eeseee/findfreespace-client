@@ -18,16 +18,14 @@ const MainBar = () => {
     return (
         <body>
             <nav>
-                <div class="dropdown">
-                    <div class="dropdownbtn">
-                        <button>select current building</button>
-                        <ul>
-                            <li><a href="#">icics building</a></li>
-                            <li><a href="#">leonard s. klinck</a></li>
-                            <li><a href="#">earth sciences building</a></li>
-                        </ul>
-                    </div>
-                </div>   
+                <div class="select">
+                    <button>select current building</button>
+                    <ul>
+                        <li><a href="#">icics building</a></li>
+                        <li><a href="#">leonard s. klinck</a></li>
+                        <li><a href="#">earth sciences building</a></li>
+                    </ul>
+                </div>
             </nav>
         </body>
     )
